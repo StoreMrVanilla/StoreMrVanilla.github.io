@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style> 
+    <body {font-family: Arial;}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #FF0000;
+}
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+p {
+  text-align: center;
+}
+a {
+  text-align: center;
+}
+
+body {
+     background-color: rgb(102, 38, 38);
+}
+</style>
+</head>
+<body>
+    
+<h1>MR.Vanilla Store</h1>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'Ranks')">Ranks</button>
+  <button class="tablinks" onclick="openCity(event, 'Economy')">Economy</button>
+  <button class="tablinks" onclick="openCity(event, 'SnE')">Spawners And Eggs</button>
+  <button class="tablinks" onclick="openCity(event, 'LC')">Loot Chests</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <h1>Mr.Vanilla</h1>
+    <h3>Make sure you are online, and have enough inventory space to hold your items. We are not responsible if you do not receive them because you don't have enough space in your inventory, or if you are not online.</h3>
+</div>
+
+<div id="Ranks" class="tabcontent">
+    <img src="Ultra.jpg" alt="Ultra"><h2>Ultra $24,99</h2>
+    <img src="Legend.jpg" alt="Legend"><h2>Legend $14,99</h2>
+    <img src="Titan.jpg" alt="Titan"><h2>Titan $5,99</h2>
+</div>
+   
+<div id="Economy" class="tabcontent">
+    <img src="Gold.jpg" alt="Gold"><h2>Gold Pack $49,99</h2>
+    <img src="Silver.jpg" alt="Silver"><h2>Silver Pack $24,99</h2>
+    <img src="Bronze.jpg" alt="Bronze"><h2>Bronze Pack $14,99</h2>
+</div>
+
+<div id="SnE" class="tabcontent">
+        <img src="mob.jpg" alt="mob"><h2>Monster Spawner $10,00</h2>
+        <img src="creeper.jpg" alt="creeper"><h2>Creeper Egg $10,00</h2>
+        <img src="villager.jpg" alt="Villager"><h2>Villager Egg $10,00</h2>
+        <img src="magma.jpg" alt="magma"><h2>Magma Cube Egg $10,00</h2>
+        <img src="skeleton.jpg" alt="skeleton"><h2>Skeleton Egg $10,00</h2>
+        <img src="zombie.jpg" alt="zombie"><h2>Zombie Egg $10,00</h2>
+        <img src="blaze.jpg" alt="blaze"><h2>Blaze Egg $10,00</h2>
+        <img src="enderman.jpg" alt="enderman"><h2>Enderman Egg $10,00</h2>
+        <img src="chicken.jpg" alt="chicken"><h2>Chicken Egg $10,00</h2>
+        <img src="sheep.jpg" alt="sheep"><h2>Sheep Egg $10,00</h2>
+        <img src="cow.jpg" alt="cow"><h2>Cow Egg $10,00</h2>
+</div>
+
+<div id="LC" class="tabcontent">
+        <img src="mr.jpg" alt="mr"><h2>10x Mr Crate Key $50,00</h2>
+        <img src="mr.jpg" alt="mr"><h2>5x Mr Crate Key $30,00</h2>
+        <img src="mr.jpg" alt="mr"><h2>1x Mr Crate Key $6,50</h2>
+        <img src="ultrak.jpg" alt="ultrak"><h2>5x Ultra Crate Key $17,00</h2>
+        <img src="ultrak.jpg" alt="ultrak"><h2>3x Ultra Crate Key $10,00</h2>
+        <img src="ultrak.jpg" alt="ultrak"><h2>1x Ultra Crate Key $5,50</h2>
+        <img src="Spawtra.jpg" alt="Spawtra"><h2>5x Spawntra Crate Key $27,00</h2>
+        <img src="Spawtra.jpg" alt="Spawtra"><h2>3x Spawntra Crate Key $17,00</h2>
+        <img src="Spawtra.jpg" alt="Spawtra"><h2>1x Spawntra Crate Key $7,00</h2>
+        <img src="Private.jpg" alt="Private"><h2>50x Private Crate Key $17,50</h2>
+        <img src="Private.jpg" alt="Private"><h2>20x Private Crate Key $10,00</h2>
+        <img src="Private.jpg" alt="Private"><h2>10x Private Crate Key $6,00</h2>
+        <img src="global.jpg" alt="global"><h2>5x Global Crate Key $15,00</h2>
+        <img src="global.jpg" alt="global"><h2>3x Global Crate Key $10,50</h2>
+        <img src="global.jpg" alt="global"><h2>1x Global Crate Key $4,50</h2>
+        <img src="spawner.jpg" alt="spawner"><h2>10x Spawner Crate Key $16,00</h2>
+        <img src="spawner.jpg" alt="spawner"><h2>5x Spawner Crate Key $11,00</h2>
+        <img src="spawner.jpg" alt="spawner"><h2>1x Spawner Crate Key $5,00</h2>
+</div>    
+    
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
